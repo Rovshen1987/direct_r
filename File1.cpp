@@ -10,9 +10,21 @@
 
 #include <stdio.h>
 #include <iostream>
+#include "direct_r.h"
+#include <string>
+#include <windows.h>
 
-int _tmain(int argc, _TCHAR* argv[]) 
+
+int _tmain(int argc, _TCHAR* argv[])
 {
+	std::string s;
+	direct_r r;
+	s = r.get_path();
+	std::cout << s << std::endl;
+
+		SetConsoleCP(1251);
+		SetConsoleOutputCP(1251);
+
 
     std::system("pause");
 	return 0;
