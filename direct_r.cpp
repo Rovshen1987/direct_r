@@ -20,3 +20,70 @@ char direct_r::get_drive()
    result = temp[0];
    return result;
 };
+
+
+bool direct_r::check_file(std::string& value)
+{
+  	std::string temp;
+	bool result;
+
+
+	temp = value.c_str();
+	ifstream f(temp);
+
+	if (f.is_open())
+	{
+	 result = true;
+	}
+	else
+	{
+	 result = false;
+	};
+
+	return result;
+
+};
+
+bool direct_r::check_file(std::string&& value)
+{
+  	std::string temp;
+	bool result;
+
+
+	temp = value.c_str();
+	ifstream f(temp);
+
+	if (f.is_open())
+	{
+	 result = true;
+	}
+	else
+	{
+	 result = false;
+	};
+
+	return result;
+
+};
+
+bool direct_r::check_file(AnsiString&& value)
+{
+  	std::string temp;
+	bool result;
+
+
+	temp = value.c_str();
+	ifstream f(temp);
+
+	if (f.is_open())
+	{
+	 result = true;
+	}
+	else
+	{
+	 result = false;
+	};
+
+	return result;
+
+};
