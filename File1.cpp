@@ -14,8 +14,10 @@
 #include <string>
 #include <windows.h>
 #include <IniFiles.hpp>
+#include <filesystem>
 
 
+namespace fs = std::filesystem;
 int _tmain(int argc, _TCHAR* argv[])
 {
 		SetConsoleCP(1251);
@@ -23,16 +25,30 @@ int _tmain(int argc, _TCHAR* argv[])
 
    //     std::string s = "D:\workshop\consol\ini_parser\Win32\Debug\config";
 
-//	std::string s;
+//	std::string s = "D:\\Picture.bmp";
 //	direct_r r;
 //	s = r.get_path();
+////    s = r.check_file("D:\\Picture.bmp");
 //	std::cout << s << std::endl;
 
-	std::string s = "D:\\workshop\\consol\\ini_parser\\Win32\\Debug\\config.ini";
-	direct_r r1;
 
-	std::cout << std::boolalpha<<r1.check_file(s)<<std::endl;
+//  fs::create_directory("D:/Alpha");
+//
+//	std::string s ="D:/Book/програмирование";
 
+//  if (fs::is_directory(s))
+//  {
+//  std::cout << "Dogry\n";
+//  }
+//  else
+//  {
+//  std::cout << "Yalnys\n";
+//  }
+
+   std::string s = "Picture";
+   direct_r r;
+   r.create_folder_in_prog(s);
+//   std::cout << s1 << std::endl;
 
     std::system("pause");
 	return 0;

@@ -5,6 +5,7 @@
 #include <direct.h>
 #include <fstream>
 #include <System.hpp>
+#include <filesystem>
 
 
 using string = std::string;
@@ -17,6 +18,7 @@ class direct_r
 		 ~direct_r();
 
    string get_path();
+   string get_path(string folder_name);
    char get_drive();
 
    template<class T>
@@ -31,6 +33,10 @@ class direct_r
    bool check_file(AnsiString&& value);
 
 
+   void  create_folder_in_prog(std::string folder_name);
    private:
+   std::string true_slesh(std::string folder_name);
+
+
 
 };
