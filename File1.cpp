@@ -45,6 +45,8 @@ int _tmain(int argc, _TCHAR* argv[])
 //  std::cout << "Yalnys\n";
 //  }
 
+   int a;
+
    std::string s = "Picture";
    direct_r r;
    r.create_folder_in_prog(s);
