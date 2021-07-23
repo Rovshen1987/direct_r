@@ -11,10 +11,13 @@
 #include <stdio.h>
 #include <iostream>
 #include "direct_r.h"
-#include <string>
+//#include <string>
 #include <windows.h>
-#include <IniFiles.hpp>
-#include <filesystem>
+//#include <vcl.h>
+//#include <filesystem>
+
+
+
 
 
 namespace fs = std::filesystem;
@@ -45,11 +48,11 @@ int _tmain(int argc, _TCHAR* argv[])
 //  std::cout << "Yalnys\n";
 //  }
 
-   int a;
+//	std::cout << ser << std::endl;
 
-   std::string s = "Picture";
-   direct_r r;
-   r.create_folder_in_prog(s);
+//   std::string s = "Picture";
+//   direct_r r;
+//   r.create_folder_in_prog(s);
 //   std::cout << s1 << std::endl;
 
     std::system("pause");

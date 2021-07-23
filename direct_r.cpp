@@ -20,16 +20,6 @@ string direct_r::get_path(string folder_name)
 
 };
 
-AnsiString direct_r::get_path_AnsiString(string folder_name)
-{
-string str   = "";
-
-   char current_work_dir[FILENAME_MAX];
-   _getcwd(current_work_dir, sizeof(current_work_dir));
-   str = string(current_work_dir)+ string("\\")+ folder_name + string("\\");
-
-   return AnsiString{str.c_str()};
-};
 
 char direct_r::get_drive()
 {

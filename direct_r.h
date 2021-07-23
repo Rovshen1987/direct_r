@@ -7,7 +7,6 @@
 #include <System.hpp>
 #include <filesystem>
 #include <vcl.h>
-#include <string>
 #include <Vcl.ComCtrls.hpp>
 
 
@@ -22,7 +21,6 @@ class direct_r
 
    string get_path();
    string get_path(string folder_name);
-   AnsiString get_path_AnsiString(string folder_name);
    char get_drive();
 
    template<class T>
